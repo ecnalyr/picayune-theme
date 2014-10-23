@@ -1,14 +1,14 @@
-name: "Default theme"
-systemName: "default"
+name: "Different Name theme"
+systemName: "different_name"
 version: "1.0"
 templates:
     Guide:
         -
-            name: "Default Guide Page Template"
+            name: "Different Name Guide"
             systemName: "guideDefault"
             file: "guide.html.twig"
     Market:
         -
-            name: "Default Market Template"
+            name: "Different Name Default Market Template"
             systemName: "marketDefault"
             file: "market.html.twig"
