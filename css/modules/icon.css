@@ -262,7 +262,8 @@
     max-height: 310px;
     overflow: auto; }
     .icon-container .icon-shade .icon-shade-content-desc.shade-code {
-      padding-top: 25px; }
+      padding-top: 25px;
+      padding-left: 43px; }
   .icon-container .icon-shade .icon-shade-content-btn {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -402,7 +403,6 @@ body.desktop .icon-shade-container {
     padding: 0;
     padding-left: 15px;
     display: table-cell;
-    vertical-align: middle;
     height: 380px; }
     @media screen and (max-width: 1304px) {
       body.desktop .icon-shade-container .icon-shade-content .icon-shade-title p {
