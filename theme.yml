@@ -5,10 +5,10 @@ templates:
     Guide:
         -
             name: "Different Name Guide"
-            systemName: "guideDefault"
+            systemName: "guideDifferentName"
             file: "guide.html.twig"
     Market:
         -
             name: "Different Name Default Market Template"
-            systemName: "marketDefault"
+            systemName: "marketDifferentName"
             file: "market.html.twig"
