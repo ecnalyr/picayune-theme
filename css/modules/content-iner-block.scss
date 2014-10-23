@@ -1,0 +1,66 @@
+@import "../../css/mixins.scss";
+.top-block {
+	display: inline-block;
+	width: 32.41%;
+	padding: 5px;
+	margin-right: 1%;
+	margin-bottom: 20px;
+	background: rgb(255, 255, 255);
+	text-align: center;
+	vertical-align: top;
+	height: 370px;
+	border: 1px solid rgb(237, 237, 235);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	color: $colorTextH;
+	@media screen and (max-width: $break-desktop - 1) {
+    width: 48.41%;
+  }
+	@media screen and (max-width: $break-tablet - 1) {
+    width: 100%;
+		
+	float: none;
+		margin: 10px auto;
+  }
+}
+
+.top-block  h1{
+font-size: 20px;
+font-weight: 700;
+margin: 15px 0 5px;
+line-height: 20px;
+}
+.top-block  p {
+	font-size: 15px;
+}
+.top-block:hover {
+	color: red;
+}
+.top-block:nth-child(3n+1) {
+	margin-right: 0%;
+	@media screen and (max-width: $break-desktop - 1) {
+    margin-right: 1%;
+  }
+}
+.top-block:nth-child(2n) {
+	@media screen and (max-width: $break-desktop - 1) {
+    margin-right: 1%;
+  }
+}
+.top-block-img {
+	background: url(../../img/buying2.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	height: 249px;
+	margin-bottom: 20px;
+}
+//.top-block-img img {
+//	text-align: center;
+//	vertical-align: middle;
+////	width: inherit;
+//	display: block;
+//	margin-left: -75px;
+//	height: inherit;
+//}

@@ -1,0 +1,56 @@
+@import "../../css/mixins.scss";
+
+footer {
+  @include clear-fix;
+  padding: 0 0 30px 0;
+  .b-social-btns {
+    @include clear-fix;
+    text-align: center;
+    padding: 30px 0 15px;
+    float: none;
+    margin: 0;
+
+    .b-social-btn {
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: 27px 27px;
+      display: inline-block;
+      height: 27px;
+      width: 27px;
+      float: none;
+      margin: 0 8px;
+
+      &.btn-facebook {
+        background-image: url("../../img/fb_footer@2x.png");
+      }
+
+      &.btn-twitter {
+        background-image: url("../../img/twitter_icon_footer@2x.png");
+      }
+
+      &.btn-pinterest {
+        background-image: url("../../img/pinterest_icon_footer@2x.png");
+      }
+
+      &.btn-googleplus {
+        background-image: url("../../img/g_plus_icon_footer@2x.png");
+      }
+    }
+  }
+}
+
+.b-copyright {
+  text-align: center;
+}
+
+.f-copyright {
+  @include font(12, 18);
+  color: $c-dark-grey;
+  font-weight: bold;
+  a {
+    color: inherit;
+    font-size: inherit;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+}

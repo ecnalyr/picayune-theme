@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  line-height: 1.4;
+  font-size: 15px;
+  font-family: "Tahoma";
+  color: black; }
+
+body.cke_editable {
+  padding: 10px; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+:focus {
+  outline: 0; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+.f-small {
+  font-size: 0.86667em;
+  line-height: 1; }
+
+.f-right {
+  text-align: right; }
+
+.f-left {
+  text-align: left; }
+
+.f-center {
+  text-align: center; }
+
+.f-justify {
+  text-align: justify; }
+
+.f-more {
+  cursor: pointer;
+  color: #cc3300; }
+
+.f-red {
+  color: #FF0000; }
+
+h1, .h1 {
+  font-size: 1.53333em;
+  line-height: 1.34783;
+  color: #363636;
+  font-weight: bold;
+  display: block;
+  margin: 5px 0; }
+
+h2, .h2 {
+  font-size: 1.46667em;
+  line-height: 1.36364;
+  color: #363636;
+  font-weight: bold;
+  display: block;
+  margin: 5px 0; }
+
+h3, .h3 {
+  font-size: 1.33333em;
+  line-height: 1.4;
+  color: #363636;
+  font-weight: bold;
+  display: block;
+  margin: 5px 0; }
+
+h4, .h4 {
+  font-size: 1.2em;
+  line-height: 1.44444;
+  color: #363636;
+  font-weight: bold;
+  display: block;
+  margin: 5px 0; }
+
+h5, .h5 {
+  font-size: 1.06667em;
+  line-height: 1.5;
+  color: #363636;
+  font-weight: bold;
+  display: block;
+  margin: 5px 0; }
+
+h5, .h5 {
+  font-size: 0.93333em;
+  line-height: 1.57143;
+  color: #363636;
+  font-weight: bold;
+  display: block;
+  margin: 5px 0; }
+
+.spacer {
+  display: inline-block;
+  opacity: 0.6;
+  padding: 0 5px; }
+
+ol, ul {
+  list-style-position: inside; }
+
+.help-inline {
+  color: red; }

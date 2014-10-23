@@ -1,0 +1,82 @@
+.compare-place {
+  font-family: Arial, "Bitstream Vera Sans", Helvetica, Verdana, sans-serif; }
+  .compare-place .filter-row .select-guide {
+    font-size: 28px;
+    position: relative;
+    top: 3px;
+    font-family: Arial;
+    font-weight: normal;
+    border-radius: 7px; }
+    @media screen and (max-width: 1304px) and (min-width: 768px) {
+      .compare-place .filter-row .select-guide {
+        font-size: 20px;
+        margin-bottom: 20px; } }
+    @media screen and (max-width: 767px) {
+      .compare-place .filter-row .select-guide {
+        font-size: 16px;
+        margin-bottom: 15px; } }
+  .compare-place .action-buttons {
+    margin-bottom: 20px; }
+  .compare-place .lists .list {
+    margin-bottom: 20px; }
+    .compare-place .lists .list > .title {
+      font-weight: normal;
+      font-size: 45px;
+      margin-bottom: 10px; }
+      @media screen and (max-width: 1304px) and (min-width: 768px) {
+        .compare-place .lists .list > .title {
+          font-size: 32px; } }
+      @media screen and (max-width: 767px) {
+        .compare-place .lists .list > .title {
+          font-size: 26px; }
+          .compare-place .lists .list > .title span {
+            display: block; } }
+      .compare-place .lists .list > .title .buttons {
+        margin-bottom: 20px; }
+        @media screen and (max-width: 1304px) and (min-width: 768px) {
+          .compare-place .lists .list > .title .buttons {
+            margin-bottom: 15px; } }
+        @media screen and (max-width: 767px) {
+          .compare-place .lists .list > .title .buttons {
+            margin-bottom: 10px;
+            font-size: 11px; } }
+      .compare-place .lists .list > .title a.btn-action {
+        position: relative;
+        top: -10px;
+        margin-left: 10px; }
+        @media screen and (max-width: 1304px) and (min-width: 768px) {
+          .compare-place .lists .list > .title a.btn-action {
+            top: -5px; } }
+        @media screen and (max-width: 767px) {
+          .compare-place .lists .list > .title a.btn-action {
+            top: -4px; } }
+    .compare-place .lists .list .guides .guide > .title {
+      font-size: 32px;
+      font-style: italic;
+      margin-bottom: 10px; }
+      @media screen and (max-width: 1304px) and (min-width: 768px) {
+        .compare-place .lists .list .guides .guide > .title {
+          font-size: 24px; } }
+      @media screen and (max-width: 767px) {
+        .compare-place .lists .list .guides .guide > .title {
+          font-size: 20px; } }
+    .compare-place .lists .list .guides .pages {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 1px solid #b7b7b7;
+      border-radius: 5px;
+      width: 100%; }
+      .compare-place .lists .list .guides .pages .page {
+        margin-bottom: 20px; }
+        .compare-place .lists .list .guides .pages .page > .title {
+          font-size: 24px; }
+          @media screen and (max-width: 1304px) and (min-width: 768px) {
+            .compare-place .lists .list .guides .pages .page > .title {
+              font-size: 20px; } }
+          @media screen and (max-width: 767px) {
+            .compare-place .lists .list .guides .pages .page > .title {
+              font-size: 16px; } }
+      .compare-place .lists .list .guides .pages .page:last-child {
+        margin-bottom: 0px; }

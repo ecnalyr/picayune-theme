@@ -1,0 +1,30 @@
+.hr-dashed {
+  height: 15px;
+  border-width: 1px 0 0 0;
+  border-color: #ccc;
+  border-style: dashed;
+  margin: 20px 0 0 0; }
+
+.hr-light-thick {
+  border-width: 3px 0 0 0;
+  border-color: rgba(0, 0, 0, 0.02);
+  border-style: solid;
+  margin: 0 0 15px 0; }
+
+.hr-light-thin {
+  border-width: 1px 0 0 0;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-style: solid;
+  margin: 0; }
+
+.hr-dark-thick {
+  border-color: rgba(0, 0, 0, 0.35);
+  border-width: 3px 0 0 0;
+  border-style: solid;
+  margin: 0; }
+
+.hr-red {
+  border-style: solid;
+  border-color: #ff0000;
+  border-width: 1px 0 0 0;
+  margin: 0; }

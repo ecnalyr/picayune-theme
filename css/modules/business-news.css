@@ -1,0 +1,81 @@
+.business-news article {
+  margin-bottom: 10px;
+  padding: 4px 10px 35px 10px;
+  position: relative; }
+  .business-news article:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+.business-news h2 {
+  color: #000;
+  font-size: 1.86667em;
+  line-height: 1.07143;
+  margin: 0 0 10px;
+  text-align: left;
+  font-weight: normal; }
+  .business-news h2 a {
+    color: #69c;
+    text-decoration: none; }
+
+.business-news-post-meta {
+  color: #ccc;
+  margin: 12px 0 9px; }
+
+.business-news-post-img {
+  float: left;
+  padding-right: 25px; }
+  .business-news-post-img a {
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(7, 7, 9, 0.25);
+    display: inline-block;
+    padding: 4px;
+    position: relative; }
+  .business-news-post-img img {
+    width: 225px; }
+
+.business-news-post-read-more {
+  margin-top: 1em; }
+  .business-news-post-read-more a {
+    color: #395c97;
+    font-size: 14px;
+    text-decoration: none; }
+
+.business-news-pagination {
+  margin: 25px 0 0 0;
+  position: relative; }
+  .business-news-pagination ul {
+    display: block;
+    list-style: none;
+    margin: 0 0 15px 0;
+    padding: 0;
+    text-align: center; }
+    .business-news-pagination ul li {
+      display: inline-block; }
+      .business-news-pagination ul li a, .business-news-pagination ul li span {
+        display: inline-block;
+        padding: 6px 10px;
+        background-color: #9dd1e6;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        margin-bottom: 2px; }
+      .business-news-pagination ul li a:hover {
+        opacity: 0.9; }
+      .business-news-pagination ul li.active span {
+        background-color: #ccc;
+        text-shadow: none; }
+      .business-news-pagination ul li.next a, .business-news-pagination ul li.previous a {
+        background: none;
+        color: #7d7d7d;
+        position: absolute;
+        top: 0;
+        font-size: 13px;
+        font-weight: normal; }
+      .business-news-pagination ul li.next a {
+        right: 0; }
+      .business-news-pagination ul li.previous a {
+        left: 0; }

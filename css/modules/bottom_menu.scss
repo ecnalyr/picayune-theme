@@ -1,0 +1,33 @@
+@import "../../css/mixins.scss";
+
+.b-bottom_menu-wrap {
+  padding: 10px 0 20px 0;
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.b-bottom_menu {
+  text-align: center;
+  li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 23px;
+    @media screen and (max-width: $break-tablet - 1) {
+      display: block;
+      padding-right: 0;
+      margin-bottom: 15px;
+    }
+
+    a {
+      @include font(14, 18);
+      color: $c-link-dark;
+      text-decoration: none;
+      font-weight: 600;
+      &:hover,
+      &.is-active {
+        color: $c-link-hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,234 @@
+@import "../../css/mixins.scss";
+
+.b-main-slider {
+  @media screen and (max-width: $break-tablet - 1) and (min-width: $break-smart-p) {
+    padding: 10px;
+  }
+  @media screen and (max-width: $break-smart-p - 1) {
+    overflow: hidden;
+  }
+
+  .bx-wrapper {
+    margin-bottom: 0;
+    .bx-viewport {
+      @include box-shadow(2px, 2px, 5px, 0px, rgba(50, 50, 50, 0.53));
+      background: #000;
+      border: 0;
+      left: 0;
+      @media screen and (max-width: $break-smart-p - 1) {
+        @include box-shadow(0px, 2px, 5px, 0px, rgba(50, 50, 50, 0.53));
+      }
+    }
+
+    .bx-pager {
+      bottom: auto;
+      padding-top: 5px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: auto;
+
+      .bx-pager-item a {
+        background: #ccc;
+        &.active,
+        &:hover {
+          background: #f00;
+        }
+      }
+    }
+  }
+
+  .j-main-slider {
+    height: 100%;
+  }
+}
+
+.b-main-slider-item {
+  height: 500px;
+  @media screen and (max-width: $break-desktop - 1) {
+    height: 440px;
+  }
+  @media screen and (max-width: $break-smart-p - 1) {
+    max-width: 480px;
+  }
+}
+
+.b-main-slider-item-img {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.b-main-slider-item-description {
+  background: url('../../img/black_fade.png') top left repeat-x;
+  bottom: 0;
+  padding: 0px 15px 20px 15px;
+  position: absolute;
+  width: 100%;
+
+  h3 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  p {
+    margin: 0 0 20px 0;
+  }
+}
+
+.b-main-slider-item-read-more {
+  background: #F00;
+  border-top-left-radius: 20px;
+  bottom: 0;
+  padding: 5px 20px 5px 20px;
+  position: absolute;
+  right: 0;
+
+  &:hover {
+    background: #C00;
+  }
+}
+
+.f-main-slider-item-read-more {
+  font-weight: bold;
+}
+
+.f-main-slider-item-description {
+
+  &, * {
+    color: #fff;
+  }
+
+  h3 {
+    @include font(30, 30);
+    font-weight: 600;
+  }
+}
+
+.b-slider_wr {
+  .bx-wrapper {
+    margin-bottom: 0;
+
+    .bx-viewport {
+      background: transparent;
+      border: 0;
+      left: 0;
+      box-shadow: none;
+    }
+
+    .bx-pager {
+      padding-top: 5px;
+      position: absolute;
+      right: 5px;
+      bottom: 0;
+      width: auto;
+
+      .bx-pager-item a {
+        background: #ccc;
+        height: 8px;
+        width: 8px;
+        margin: 0 4px;
+        &.active,
+        &:hover {
+          background: #777;
+        }
+      }
+    }
+
+  }
+}
+
+
+
+.b-bxslider {
+  text-align: center;
+
+  .b-slide-content {
+    padding: 55px 30px 0 30px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @media screen and (max-width: $break-tablet - 1) {
+      padding-top: 40px;
+    }
+    @media screen and (max-width: $break-smart-md - 1) {
+      padding: 20px 10px 10px 10px;
+    }
+  }
+
+  .b-slide-content-text {
+    padding: 0 0 0 40.73%;
+    text-align: center;
+    float: left;
+    @media screen and (max-width: $break-desktop - 1) {
+      padding-top: 0;
+    }
+    @media screen and (max-width: $break-smart-md - 1) {
+      padding: 0;
+    }
+  }
+
+  .featured, h2, p {
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  .featured {
+    @include font(66, 66);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #feef03;
+    margin: 0 0 15px 0;
+    @media screen and (max-width: $break-desktop - 1) {
+      @include font(42, 42);
+    }
+    @media screen and (max-width: $break-medium - 1) {
+      @include font(24, 24);
+    }
+    @media screen and (max-width: $break-smart-md - 1) {
+      @include font(16, 16);
+    }
+  }
+
+  p {
+    @include font(30, 50);
+    margin-bottom: 20px;
+    color: #fff;
+    @media screen and (max-width: $break-desktop - 1) {
+      @include font(30, 40);
+    }
+    @media screen and (max-width: $break-medium - 1) {
+      @include font(18, 24);
+    }
+    @media screen and (max-width: $break-smart-md - 1) {
+      @include font(12, 14);
+      margin-bottom: 5px;
+    }
+  }
+
+  h2 {
+    @include font(46, 46);
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 10px 0;
+    @media screen and (max-width: $break-desktop - 1) {
+      @include font(32, 32);
+    }
+    @media screen and (max-width: $break-medium - 1) {
+      @include font(20, 20);
+    }
+    @media screen and (max-width: $break-smart-md - 1) {
+      @include font(14, 14);
+    }
+  }
+
+  img {
+    @include img-responsive;
+  }
+}
+
+@media only screen and (max-width: $break-tablet - 1) {
+  .b-bxslider_hidden {
+    display: none;
+  }
+}

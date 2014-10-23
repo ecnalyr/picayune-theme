@@ -1,0 +1,48 @@
+@import "../../css/mixins.scss";
+
+.j-masonry-item {
+  &.w1 {
+    height: 500px;
+    max-width: 580px;
+    margin-bottom: 20px;
+    position: relative;
+
+    @media screen and (max-width: $break-desktop - 1) {
+      height: 450px;
+      max-width: 386px;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: $break-tablet - 1) {
+      max-width: 100%;
+      width: 100%;
+    }
+    @media screen and (max-width: $break-smart-p - 1) {
+      max-width: 480px;
+    }
+  }
+
+  &.w2 {
+    float: left;
+    margin-right: 18px;
+    width: 282px;
+    @media screen and (max-width: $break-desktop - 1) {
+      width: 187px;
+      margin-right: 13px;
+    }
+    @media screen and (max-width: $break-tablet - 1) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &.b-bloglink {
+    @media screen and (max-width: $break-tablet - 1) {
+      padding: 0 10px 10px 10px;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: $break-smart-p - 1) {
+      padding: 0 0 10px 0;
+    }
+  }
+}

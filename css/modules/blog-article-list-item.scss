@@ -1,0 +1,137 @@
+@import "../../css/mixins.scss";
+
+.blog-article-list {
+  padding: 0 55px 0 10px;
+  @media screen and (max-width: $break-desktop - 1) {
+    padding-right: 15px;
+  }
+  @media screen and (max-width: $break-tablet - 1) {
+    padding: 15px 0;
+  }
+  .ajax-loader {
+    margin: 15px 0 0 15px;
+  }
+}
+
+.blog-article-list-item-wr {
+  @include clear-fix;
+
+  display: block;
+  overflow: hidden;
+  height: 182px;
+  border-color: #ccc;
+  border-style: dashed;
+  border-width: 0 0 1px 0;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #222;
+  @media screen and (max-width: $break-tablet - 1) {
+
+  }
+  @media screen and (max-width: $break-smart-p - 1) {
+    height: auto;
+    margin-top: 15px;
+  }
+
+
+  &:hover {
+    cursor: pointer;
+    background: #f2f2f2;
+    //height: 197px;
+
+    @media screen and (max-width: $break-smart-p - 1) {
+      height: auto;
+    }
+  }
+
+  .blog-article-list-item-content {
+   // @include transition(all 1s ease);
+    @media screen and (max-width: $break-smart-p - 1) {
+     // padding-top: 10px;
+    }
+  }
+
+  &:hover .blog-article-list-item-content {
+   // padding-top: 10px;
+    @media screen and (max-width: $break-smart-p - 1) {
+      height: auto;
+    }
+  }
+
+  &:hover .blog-article-list-item-read-more {
+    background-color: #f2f2f2;
+  }
+
+  &:hover .blog-article-list-item-read-more span {
+    display: inline;
+  }
+
+  &:hover img {
+    //height: 182px;
+    @media screen and (max-width: $break-smart-p - 1) {
+      height: auto;
+      width: 105%;
+    }
+  }
+
+  img {
+    //@include transition(all 1s ease);
+    height: 154px;
+    float: left;
+    margin-right: 15px;
+    @media screen and (max-width: $break-smart-p - 1) {
+      float: none;
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  p {
+    @include font(15);
+    padding-bottom: 5px;
+    @media screen and (max-width: $break-desktop - 1) {
+      @include font(13);
+    }
+    @media screen and (max-width: $break-tablet - 1) {
+      @include font(12);
+    }
+  }
+
+  h3 {
+    @include font(28, 28);
+    margin: 0 0 8px 0;
+    padding: 0;
+    @media screen and (max-width: $break-desktop - 1) {
+      @include font(20, 20);
+    }
+    @media screen and (max-width: $break-tablet - 1) {
+      @include font(18, 18);
+    }
+  }
+
+  .blog-article-list-item-read-more {
+    padding-right: 14px;
+    background: transparent url("../../img/blog-article-list-item-arrow.png") no-repeat right 4px;
+  }
+
+  .blog-article-list-item-read-more span {
+    @include font(16, 16);
+    color: #0a47ac;
+    text-decoration: underline;
+    padding-right: 8px;
+    display: none;
+    @media screen and (max-width: $break-desktop - 1) {
+      @include font(14);
+    }
+    @media screen and (max-width: $break-tablet - 1) {
+      @include font(12);
+    }
+  }
+}
+
+.blog-articles {
+  margin-top: -20px;
+}

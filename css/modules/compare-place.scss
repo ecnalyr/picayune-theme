@@ -1,0 +1,127 @@
+@import "../../css/mixins.scss";
+
+.compare-place {
+  font-family: Arial, "Bitstream Vera Sans", Helvetica, Verdana, sans-serif;
+
+  .filter-row {
+    .select-guide {
+      font-size: 28px;
+      position: relative;
+      top: 3px;
+      font-family: Arial;
+      font-weight: normal;
+      border-radius: 7px;
+
+      @media screen and (max-width: $break-desktop - 1) and (min-width: $break-tablet) {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: $break-tablet - 1) {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+    }
+  }
+
+  .action-buttons {
+    margin-bottom: 20px;
+  }
+
+  .lists {
+    .list {
+      margin-bottom: 20px;
+
+      > .title {
+        font-weight: normal;
+        font-size: 45px;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: $break-desktop - 1) and (min-width: $break-tablet) {
+          font-size: 32px;
+
+
+        }
+        @media screen and (max-width: $break-tablet - 1) {
+          font-size: 26px;
+
+          span {
+            display: block;
+          }
+        }
+
+        .buttons {
+            margin-bottom: 20px;
+
+            @media screen and (max-width: $break-desktop - 1) and (min-width: $break-tablet) {
+              margin-bottom: 15px;
+            }
+            @media screen and (max-width: $break-tablet - 1) {
+              margin-bottom: 10px;
+              font-size: 11px;
+            }
+        }
+
+        a.btn-action {
+          position: relative;
+          top: -10px;
+          margin-left: 10px;
+
+          @media screen and (max-width: $break-desktop - 1) and (min-width: $break-tablet) {
+            top: -5px;
+          }
+          @media screen and (max-width: $break-tablet - 1) {
+            top: -4px;
+          }
+        }
+      }
+
+      .guides {
+        .guide {
+          > .title {
+            font-size: 32px;
+            font-style: italic;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: $break-desktop - 1) and (min-width: $break-tablet) {
+              font-size: 24px;
+            }
+            @media screen and (max-width: $break-tablet - 1) {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .pages {
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+
+          border: 1px solid #b7b7b7;
+          border-radius: 5px;
+          width: 100%;
+
+          .page {
+            margin-bottom: 20px;
+
+            > .title {
+              font-size: 24px;
+
+              @media screen and (max-width: $break-desktop - 1) and (min-width: $break-tablet) {
+                font-size: 20px;
+              }
+              @media screen and (max-width: $break-tablet - 1) {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .page:last-child {
+              margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../css/mixins.scss";
+
+.search-box {
+  float: right;
+  padding-top: 14px;
+  input {
+    @include font(18);
+    color: $default-color;
+    padding-left: 27px;
+    background: transparent url("../../img/magnifying-glass.png") 4px no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,41 @@
+aside {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  background-size: contain; }
+  @media screen and (max-width: 767px) {
+    aside {
+      background: #efefef;
+      border: 1px solid #ccc;
+      text-align: center; } }
+  aside img {
+    display: block;
+    max-width: 100%; }
+    @media screen and (max-width: 767px) {
+      aside img {
+        margin: 0 auto; } }
+  aside h2 {
+    font-size: 1.46667em;
+    line-height: 1;
+    color: #363636;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0; }
+
+.b-img-zoom {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.b-business-ico img {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 99%; }
+  .b-business-ico img:hover {
+    width: 100%; }
+
+@media screen and (max-width: 767px) {
+  .b-content-block img {
+    width: 250px; } }

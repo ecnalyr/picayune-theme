@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/base.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/layout.css" />
+    <!-- Modules -->
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/header.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/footer.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/aside.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/top_menu.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/bottom_menu.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/hr.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/news_img_link.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/slider.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/news-item.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/share.css" />
+    <!-- End Modules -->
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/modules/menu-inner.css" />
+    <link type="text/css" rel='stylesheet' href="/themes/default/css/states.css" />
+{% endblock %}
+{% block body_container %}
+{{ mobile_menu() }}
+{% block body %}{% endblock %}
+{% endblock %}

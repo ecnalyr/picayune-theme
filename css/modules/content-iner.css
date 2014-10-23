@@ -1,0 +1,190 @@
+.content-inner-top {
+  width: 100%;
+  background: url(../../img/metal_background.png);
+  padding-top: 40px; }
+
+.content-inner-clearfix {
+  clear: both;
+  margin-bottom: 10px; }
+
+.top-left {
+  width: 75%;
+  display: block;
+  text-align: center;
+  float: left; }
+  @media screen and (max-width: 979px) {
+    .top-left {
+      width: 70%;
+      margin: 0px auto; } }
+  @media screen and (max-width: 767px) {
+    .top-left {
+      width: 95%;
+      float: none;
+      margin: 0 auto; } }
+
+.top-right {
+  width: 23%;
+  display: block;
+  float: left;
+  margin-left: 2%; }
+  @media screen and (max-width: 767px) {
+    .top-right {
+      width: 95%;
+      float: none;
+      margin: 10px auto;
+      padding-bottom: 10px; } }
+
+.top-left-header {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.35);
+  margin-bottom: 20px;
+  text-align: left; }
+
+.top-left-header h1, .iner-bottom-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #363636;
+  margin: 0; }
+
+.top-left-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #363636;
+  margin: 0 0 10px; }
+
+.iner-bottom {
+  padding: 30px 0px 0 0; }
+
+.iner-bottom-header {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.35);
+  text-align: left; }
+
+.iner-bottom-contant {
+  margin: 0px 0px; }
+  @media screen and (max-width: 1304px) {
+    .iner-bottom-contant {
+      width: 100%;
+      margin: 0px auto; } }
+
+.bottom-contant-block {
+  width: 40%;
+  display: block;
+  float: left;
+  margin-top: 20px;
+  min-height: 207px; }
+  @media screen and (max-width: 1304px) {
+    .bottom-contant-block {
+      width: 100%;
+      margin: 20px auto; } }
+
+.bottom-contant-block-img {
+  width: 40%;
+  background: url(../../img/toyota-move.low-rez.jpg) no-repeat center;
+  background-size: cover;
+  display: block;
+  float: left;
+  margin-right: 2%;
+  height: 207px; }
+  @media screen and (max-width: 499px) {
+    .bottom-contant-block-img {
+      width: 100%;
+      float: none; } }
+
+.bottom-contant-block-text {
+  width: 57%;
+  height: inherit;
+  display: block;
+  float: left; }
+  @media screen and (max-width: 499px) {
+    .bottom-contant-block-text {
+      width: 100%;
+      float: none; } }
+
+.bottom-contant-block-text h1 a {
+  font-size: 20px;
+  color: #253139;
+  font-weight: 600; }
+
+.bottom-contant-block-text a {
+  color: #e2272f; }
+
+.bottom-contant-readBlog {
+  width: 20%;
+  display: block;
+  float: left;
+  height: inherit;
+  background: #253139;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  line-height: 210px;
+  margin-top: -3px;
+  text-transform: uppercase;
+  padding-bottom: 0; }
+  @media screen and (max-width: 1304px) {
+    .bottom-contant-readBlog {
+      width: 100%;
+      margin: 20px auto; } }
+
+.read-blog-arrow {
+  margin-left: 5px; }
+
+.content-tabs {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  background: white;
+  min-height: 400px;
+  margin-top: 95px;
+  margin-bottom: 50px;
+  padding: 10px 8.5%; }
+
+#content-inner-tabs-all-nav {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center; }
+
+#content-inner-tabs-all-nav li {
+  display: inline-block;
+  border: 1px solid #e2272f;
+  color: #363636;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  text-align: center; }
+
+#content-inner-tabs-all-nav li a {
+  display: inline-block;
+  color: black; }
+
+#content-inner-tabs-all-nav li.current {
+  background: #e2272f; }
+
+#content-inner-tabs-all-nav li.current a {
+  color: white; }
+
+#content-inner-tabs-all {
+  margin-top: 20px;
+  border-top: 2px solid whitesmoke; }
+
+.content-inner-tab-block {
+  padding: 10px;
+  width: 24%;
+  text-align: center;
+  display: inline-block; }
+  @media screen and (max-width: 1304px) {
+    .content-inner-tab-block {
+      width: 44%; } }
+  @media screen and (max-width: 767px) {
+    .content-inner-tab-block {
+      width: 90%; } }
+  @media screen and (max-width: 499px) {
+    .content-inner-tab-block {
+      width: 90%; } }
+
+.content-inner-tab-block img {
+  padding: 10px; }

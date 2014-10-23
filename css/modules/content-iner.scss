@@ -1,0 +1,208 @@
+@import "../../css/mixins.scss";
+
+.content-inner-top {
+	width: 100%;
+	background: url(../../img/metal_background.png);
+	padding-top: 40px;
+}
+.content-inner-clearfix {
+	clear: both;
+	margin-bottom: 10px;
+}
+.top-left {
+	width: 75%;
+	display: block;
+	text-align: center;
+	float: left;
+	@media screen and (max-width: $break-medium - 1) {
+    width: 70%;
+		margin: 0px auto;
+  }
+	@media screen and (max-width: $break-tablet - 1) {
+    width: 95%;
+		float: none;
+		margin: 0 auto;
+  }
+}
+.top-right {
+	width: 23%;
+	display: block;
+	float: left;
+	margin-left: 2%;
+	@media screen and (max-width: $break-tablet - 1) {
+    width: 95%;
+		float: none;
+		margin: 10px auto;
+		padding-bottom: 10px;
+  }
+}
+.top-left-header {
+	border-bottom: 3px solid rgba(0, 0, 0, 0.35);
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+$colorTextH:rgb(54, 54, 54);
+
+.top-left-header h1, .iner-bottom-header h1 {
+	font-size: 24px;
+	font-weight: 600;
+	color: $colorTextH;
+	margin: 0;
+}
+.top-left-header h2{
+	font-size: 16px;
+	font-weight: 600;
+	color: $colorTextH;
+	margin: 0 0 10px;
+}
+
+
+.iner-bottom {
+	padding: 30px 0px 0 0;
+}
+.iner-bottom-header {
+	border-bottom: 3px solid rgba(0, 0, 0, 0.35);
+//	margin-bottom: 20px;
+	text-align: left;
+}
+.iner-bottom-contant {
+	margin: 0px 0px;
+	@media screen and (max-width: $break-desktop - 1) {
+    width: 100%;
+		margin: 0px auto;
+  }
+}
+.bottom-contant-block {
+	width: 40%;
+	display: block;
+	float: left;
+	margin-top:20px; 
+	min-height: 207px;
+	@media screen and (max-width: $break-desktop - 1) {
+    width: 100%;
+		margin: 20px auto;
+  }
+//	height: 207
+}
+.bottom-contant-block-img {
+	width: 40%;
+	background: url(../../img/toyota-move.low-rez.jpg) no-repeat center;
+	background-size: cover;
+	display: block;
+	float: left;
+	margin-right: 2%;
+	height: 207px;
+	@media screen and (max-width: $break-smart-md - 1) {
+				width: 100%;
+		float: none;
+  }
+	
+}
+.bottom-contant-block-text {
+	width: 57%;
+	height: inherit;
+	display: block;
+	float: left;
+	@media screen and (max-width: $break-smart-md - 1) {
+				width: 100%;
+		float: none;
+  }
+}
+.bottom-contant-block-text h1 a{
+	font-size: 20px;
+	color: rgb(37, 49, 57);
+	font-weight: 600;
+//	text-decoration: none;
+}
+.bottom-contant-block-text a{
+	color: rgb(226, 39, 47);
+//	text-decoration: none;
+}
+.bottom-contant-readBlog{
+	width: 20%;
+	display: block;
+	float: left;
+	height: inherit;
+	background: rgb(37, 49, 57);
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+	line-height: 210px;
+	margin-top: -3px;
+	text-transform: uppercase;
+	padding-bottom: 0;
+	@media screen and (max-width: $break-desktop - 1) {
+    width: 100%;
+		margin: 20px auto;
+  }
+}
+.read-bloag-text {
+
+}
+.read-blog-arrow {
+	margin-left: 5px;
+}
+
+.content-tabs {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	background: white;
+	min-height: 400px;
+	margin-top: 95px;
+	margin-bottom: 50px;
+	padding: 10px 8.5%;
+}
+#content-inner-tabs-all-nav {
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
+}
+#content-inner-tabs-all-nav li {
+	display: inline-block;
+	border: 1px solid rgb(226, 39, 47);
+	color: rgb(54, 54, 54);
+	border-radius: 8px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: rgb(255, 255, 255);
+	padding: 0px 5px 0px 5px;
+	cursor: pointer;
+	text-align: center;
+}
+#content-inner-tabs-all-nav li a{
+	display: inline-block;
+	color: black;
+}
+#content-inner-tabs-all-nav li.current {
+	background: rgb(226, 39, 47);
+}
+#content-inner-tabs-all-nav li.current a{
+		color: rgb(255, 255, 255);
+}
+#content-inner-tabs-all {
+	margin-top: 20px;
+	border-top: 2px solid rgb(245, 245, 245);
+	
+}
+.content-inner-tab-block {
+	padding: 10px;
+	width: 24%;
+	text-align: center;
+	display: inline-block;
+	@media screen and (max-width: $break-desktop - 1) {
+    width: 44%;		
+  }
+		@media screen and (max-width: $break-tablet - 1) {
+    width: 90%;		
+  }
+		@media screen and (max-width: $break-smart-md - 1) {
+    width: 90%;		
+  }
+}
+.content-inner-tab-block img{
+	padding: 10px;
+}

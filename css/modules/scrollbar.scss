@@ -1,0 +1,13 @@
+@import "../../css/mixins.scss";
+
+.scrollable.default-skin {
+  .scroll-bar {
+    &.vertical {
+      background: #f2f2f2;
+      width: 5px;
+      .thumb {
+        background: #aaa;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.b-bottom_menu-wrap {
+  padding: 10px 0 20px 0; }
+  .b-bottom_menu-wrap ul {
+    margin-bottom: 0; }
+
+.b-bottom_menu {
+  text-align: center; }
+  .b-bottom_menu li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 23px; }
+    @media screen and (max-width: 767px) {
+      .b-bottom_menu li {
+        display: block;
+        padding-right: 0;
+        margin-bottom: 15px; } }
+    .b-bottom_menu li a {
+      font-size: 0.93333em;
+      line-height: 1.28571;
+      color: #363636;
+      text-decoration: none;
+      font-weight: 600; }
+      .b-bottom_menu li a:hover, .b-bottom_menu li a.is-active {
+        color: #e2272f; }

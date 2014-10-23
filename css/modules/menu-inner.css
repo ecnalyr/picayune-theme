@@ -1,0 +1,97 @@
+.menu-left-container {
+  float: left;
+  margin-top: 20px; }
+  .menu-left-container:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+
+.header-inner-menu {
+  display: block;
+  float: left; }
+  .header-inner-menu ol, .header-inner-menu ul {
+    list-style-type: none; }
+  @media screen and (max-width: 767px) {
+    .header-inner-menu {
+      float: right;
+      padding-left: 10px;
+      position: inherit !important;
+      width: auto; } }
+
+.header-1lvl-menu-inner li div {
+  color: inherit;
+  display: block;
+  float: left;
+  font-size: 0.97467em;
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.header-1lvl-menu-inner {
+  float: left;
+  padding: 0;
+  margin: 0;
+  position: relative; }
+  @media screen and (max-width: 767px) {
+    .header-1lvl-menu-inner {
+      float: right;
+      width: auto; } }
+
+.header-1lvl-menu-inner > li {
+  cursor: pointer;
+  height: 35px;
+  list-style-type: none;
+  position: relative; }
+
+.header-1lvl-menu-inner li:hover > ul {
+  display: block; }
+
+.header-2lvl-menu-inner {
+  top: 35px; }
+  @media screen and (max-width: 767px) {
+    .header-2lvl-menu-inner {
+      margin-left: -170px; } }
+  @media screen and (max-width: 499px) {
+    .header-2lvl-menu-inner {
+      margin-left: -150px;
+      width: 200px; } }
+
+.header-2lvl-menu-inner li {
+  line-height: 30px; }
+
+.header-inner-h1 {
+  padding: 0;
+  margin: 15px 0 20px 0;
+  font-weight: normal;
+  line-height: 1em;
+  float: left;
+  font-size: 40px; }
+  @media screen and (max-width: 767px) {
+    .header-inner-h1 {
+      display: none; } }
+
+.header-inner-menu-arrow {
+  background: url(../../img/dropdown_arrow.png) no-repeat;
+  display: block;
+  float: right;
+  height: 6px;
+  width: 12px;
+  margin: 4px 0px 0px 6px;
+  background-position: 0px 0px; }
+
+.header-1lvl-menu-inner li:hover .header-inner-menu-arrow {
+  background-position: 0px -6px; }
+
+.header-2lvl-menu-inner li a {
+  color: #383838;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+  height: 100%; }
+
+.header-2lvl-menu-inner li a:hover {
+  color: #e2272f; }

@@ -1,0 +1,100 @@
+{% extends '::base.html.twig' %}
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+{% block meta %}
+    {{ parent() }}
+    {% if market.marketSeoInfo.pageKeywords %}
+        <meta name="keywords" content="{{ market.marketSeoInfo.pageKeywords }}">
+    {% endif %}
+    {% if market.marketSeoInfo.pageDescription %}
+        <meta name="description" content="{{ market.marketSeoInfo.pageDescription }}">
+    {% endif %}
+    {% if market.marketSeoInfo.geographicRegion %}
+        <meta name="geo.region" content="{{ market.marketSeoInfo.geographicRegion }}"/>
+    {% endif %}
+    {% if market.marketSeoInfo.geographicPlaceName %}
+        <meta name="geo.placename" content="{{ market.marketSeoInfo.geographicPlaceName }}"/>
+    {% endif %}
+    {% if market.marketSeoInfo.position %}
+        <meta name="geo.position" content="{{ market.marketSeoInfo.position }}"/>
+    {% endif %}
+    {% if market.marketSeoInfo.icbmAddress %}
+        <meta name="ICBM" content="{{ market.marketSeoInfo.icbmAddress }}"/>
+    {% endif %}
+{% endblock %}
+{% block title %}
+    {{ market.marketSeoInfo.pageTitle|default('Corpus Christi Business News') }}
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src='{{ asset('themes/default/js/user.js') }}'></script>
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link type="text/css" rel='stylesheet' href="{{ asset('themes/default/css/modules/masonry.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="market-page">
+        {{ header() }}
+        <div class="l-container">
+            <div class="l-content">
+                <div class="l-main-content" id="container-masonry">
+                    <!-- id="container-masonry" is necessary only for the main page -->
+                    <!-- Masonry Items -->
+                    <div class="j-masonry-item b-main-slider w1">
+                        <div class="j-main-slider">
+                            {% for sliderBlogArticle in sliderBlogArticles %}
+                                <div class="b-main-slider-item">
+                                    <a href="{{ path('news-item', {'alias': sliderBlogArticle.alias}) }}">
+                                        <div class="b-main-slider-item-img"
+                                             style="background-image: url('{% path sliderBlogArticle.featuredImageThumbnail, 'reference' %}')"></div>
+                                        <div class="b-main-slider-item-description f-main-slider-item-description">
+                                            <h3>{{ sliderBlogArticle.title }}</h3>
+
+                                            <p>{{ sliderBlogArticle.article|preview|truncate(250)|raw }}</p>
+                                            <a class="b-main-slider-item-read-more f-main-slider-item-read-more"
+                                               href="{{ path('news-item', {'alias': sliderBlogArticle.alias}) }}">...read
+                                                more</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% for blogArticle in blogArticles %}
+                        <div class="j-masonry-item b-news-item f-news-item w2">
+                            <a href="{{ path('news-item', {'alias': blogArticle.alias}) }}">
+                                <img class="b-news-item-img b-img-zoom"
+                                     src="{% path blogArticle.featuredImageThumbnail, 'reference' %}" alt=""/>
+
+                                <h3>{{ blogArticle.title }}</h3>
+
+                                <p class="b-news-item-description f-news-item-description">{{ blogArticle.article|preview|truncate(250)|raw }}</p>
+                            </a>
+
+                            <div class="f-right"><a class="f-more"
+                                                    href="{{ path('news-item', {'alias': blogArticle.alias}) }}">read
+                                    more</a></div>
+                        </div>
+                    {% endfor %}
+                    <div class="j-masonry-item w2 b-bloglink">
+                        <a href="{{ path('business-news-show') }}" class="b-btn-lg f-btn-lg">More Business News &nbsp;&nbsp;&gt;</a>
+                    </div>
+                    <!-- End Masonry Items -->
+                </div>
+                <aside class="l-main-aside">
+                    <div class="b-aside-title-img b-content-block">
+                        <a href="{{ path('market-index') }}"><img
+                                    src="{{ asset('/themes/default/img/101comlogo.png') }}"></a>
+                    </div>
+                    <hr class="hr-dashed">
+                    {{ flipbook_widget() }}
+                    {{ business_newsletter_form_widget() }}
+                    {{ ad_rotator() }}
+                    {{ footer() }}
+                </aside>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+name: "Default theme"
+systemName: "default"
+version: "1.0"
+templates:
+    Guide:
+        -
+            name: "Default Guide Page Template"
+            systemName: "guideDefault"
+            file: "guide.html.twig"
+    Market:
+        -
+            name: "Default Market Template"
+            systemName: "marketDefault"
+            file: "market.html.twig"

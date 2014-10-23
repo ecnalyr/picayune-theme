@@ -1,0 +1,83 @@
+.b-top_menu {
+  float: left;
+  margin-top: 3px; }
+  .b-top_menu:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+  @media screen and (max-width: 479px) {
+    .b-top_menu {
+      float: none; } }
+  .b-top_menu ul, .b-top_menu ol {
+    list-style-type: none; }
+
+.b-top_menu-1level {
+  list-style: none;
+  margin-top: 4px;
+  position: relative; }
+  .b-top_menu-1level > li {
+    float: left;
+    list-style: none;
+    margin-left: -5px;
+    position: relative; }
+    @media screen and (max-width: 479px) {
+      .b-top_menu-1level > li {
+        position: static; } }
+    .b-top_menu-1level > li:first-child {
+      margin-left: 0; }
+    .b-top_menu-1level > li > a {
+      -moz-border-radius: 5px 5px 0 0;
+      -webkit-border-radius: 5px 5px 0 0;
+      border-radius: 5px 5px 0 0;
+      display: block;
+      padding: 5px 12px 5px 15px;
+      position: relative; }
+      @media screen and (max-width: 479px) {
+        .b-top_menu-1level > li > a {
+          padding-left: 12px;
+          padding-right: 8px; } }
+      .b-top_menu-1level > li > a.first {
+        background: #F00;
+        z-index: 3; }
+      .b-top_menu-1level > li > a.second {
+        background: #66C;
+        z-index: 2; }
+      .b-top_menu-1level > li > a.third {
+        background: #09F;
+        z-index: 1; }
+      .b-top_menu-1level > li > a:hover {
+        background: #007ab6; }
+
+.f-top_menu-1level > li > a {
+  font-size: 0.93333em;
+  line-height: 1.4;
+  color: #fff;
+  text-decoration: none; }
+
+.b-top_menu-2level {
+  background: rgba(246, 246, 246, 0.98);
+  display: none;
+  left: 5px;
+  padding: 10px 10px 10px 30px;
+  position: absolute;
+  left: -3px;
+  top: 29px;
+  width: 240px;
+  z-index: 3; }
+  @media screen and (max-width: 479px) {
+    .b-top_menu-2level {
+      left: 0;
+      width: 100%; } }
+  .b-top_menu-2level > li > a {
+    display: block; }
+
+.f-top_menu-2level > li > a {
+  font-size: 0.93333em;
+  line-height: 2.14286;
+  color: #383838;
+  text-decoration: none; }
+  .f-top_menu-2level > li > a:hover, .f-top_menu-2level > li > a.is-active {
+    color: #e2272f; }

@@ -1,0 +1,49 @@
+@import "../../css/mixins.scss";
+
+aside {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  background-size: contain;
+  @media screen and (max-width: $break-tablet - 1) {
+    background: #efefef;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    @media screen and (max-width: $break-tablet - 1) {
+      @include center;
+    }
+  }
+
+  h2 {
+    @include font(22, 22);
+    color: $c-link-dark;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+.b-img-zoom {
+  @include transition(all 1s ease);
+}
+
+.b-business-ico img {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 99%;
+  &:hover {
+    width: 100%;
+  }
+}
+
+.b-content-block {
+  @media screen and (max-width: $break-tablet - 1) {
+    img {
+      width: 250px;
+    }
+  }
+}

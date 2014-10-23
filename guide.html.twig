@@ -1,0 +1,66 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}
+   {{ guide.seoInfo.pageTitle|default(guide.name ~ 'Guide Corpus Christi Business News') }}
+{% endblock %}
+
+{% block meta %}
+    {{ parent() }}
+    {% if guide.seoInfo.pageKeywords %}
+        <meta name="keywords" content="{{ guide.seoInfo.pageKeywords }}">
+    {% endif %}
+    {% if guide.seoInfo.pageDescription %}
+        <meta name="description" content="{{ guide.seoInfo.pageDescription }}">
+    {% endif %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link type="text/css" rel='stylesheet' href="{{ asset('themes/default/css/modules/blog-article-list-item.css') }}">
+    <link type="text/css" rel='stylesheet' href="{{ asset('themes/default/css/modules/icon.css') }}">
+    <link type="text/css" rel='stylesheet' href="{{ asset('themes/default/css/modules/search.css') }}">
+    <link type="text/css" rel='stylesheet' href="{{ asset('themes/default/css/modules/scrollbar.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        $(function () {
+            require(['guide/main', 'isotope.pkgd.min'], function (factory, Isotope) {
+                var blogRollController = factory.createBlogRollController();
+                blogRollController.init();
+            });
+        });
+    </script>
+{% endblock %}
+{% block body %}
+    {% set isSlider = guide.slides|length %}
+    {% if isSlider %}
+        {{ header(true) }}
+        {{ slider() }}
+    {% else %}
+        {{ header() }}
+    {% endif %}
+    <div id="guide" data-id="{{ guide.id }}" style="overflow: hidden">
+        {{ icon_slider() }}
+        <div class="l-container">
+            <div class="l-content">
+                <div class="l-main-content">
+                    {% if guide.introductoryText %}
+                        <div class="introductory-text">
+                            {{ guide.introductoryText|raw|shortcodes }}
+                        </div>
+                    {% endif %}
+                    {{ blog_roll() }}
+                </div>
+                <aside class="l-main-aside">
+                    {{ ad_rotator() }}
+                    {{ flipbook_widget() }}
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_sharing_toolbox"></div>
+                    {{ footer() }}
+                </aside>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,5 @@
+.scrollable.default-skin .scroll-bar.vertical {
+  background: #f2f2f2;
+  width: 5px; }
+  .scrollable.default-skin .scroll-bar.vertical .thumb {
+    background: #aaa; }
